@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
+  <title>Login | SONA College of Technology</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
+      background: linear-gradient(to right, #004e92, #000428);
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -19,14 +19,19 @@
       background-color: white;
       padding: 40px 30px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      width: 320px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      width: 340px;
       text-align: center;
+    }
+
+    .login-container img {
+      width: 180px;
+      margin-bottom: 20px;
     }
 
     .login-container h2 {
       margin-bottom: 25px;
-      color: #333;
+      color: #004e92;
     }
 
     .login-container input[type="text"],
@@ -42,13 +47,13 @@
 
     .login-container input[type="text"]:focus,
     .login-container input[type="password"]:focus {
-      border-color: #4facfe;
+      border-color: #004e92;
     }
 
     .login-container button {
       width: 100%;
       padding: 10px;
-      background-color: #4facfe;
+      background-color: #004e92;
       border: none;
       border-radius: 8px;
       color: white;
@@ -58,7 +63,7 @@
     }
 
     .login-container button:hover {
-      background-color: #00c6fb;
+      background-color: #0074d9;
     }
 
     .login-container p {
@@ -67,7 +72,7 @@
     }
 
     .login-container a {
-      color: #4facfe;
+      color: #004e92;
       text-decoration: none;
     }
 
@@ -79,6 +84,7 @@
 <body>
 
   <div class="login-container">
+    <img src="logo.png" alt="SONA College of Technology Logo">
     <h2>Login</h2>
     <form>
       <input type="text" placeholder="Username" required>
