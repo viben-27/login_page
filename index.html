@@ -989,7 +989,7 @@ document.querySelectorAll('.section-title').forEach(el => scrambleObserver.obser
 function updateTime() {
   const now = new Date();
   document.getElementById('footer-time').textContent =
-    now.toISOString().replace('T',' ').slice(0,19) + ' UTC';
+  now.toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }) + ' IST';
 }
 updateTime();
 setInterval(updateTime, 1000);
@@ -1001,7 +1001,7 @@ const texts = [
   'root@viben:~$ nmap -sV -sC target.com',
   'root@viben:~$ msfconsole',
   'root@viben:~$ python3 exploit.py',
-  'root@viben:~$ ./phantom-c2 --listen 443',
+  'root@viben:~$ nc -lvnp 4444',
 ];
 let ti = 0, ci = 0, deleting = false;
 function typeEffect() {
